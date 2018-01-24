@@ -1,15 +1,18 @@
-#article1,#article2,#article3{
-  height: 405px;
-  width: 335px;
+.card1{
+  padding-top: 10px;
+  width: 300px;
   text-align: center;
   background-color:#eee;
   border-radius: 6px;
   margin: auto;
   box-shadow: 0 0 10px .1px;
-  margin-left: 65px;
-  margin-bottom: 20px;
-  padding-top: 10px;
 }
+td{
+  padding-left: 250px;
+  padding-top: 20px;
+}
+
+
 
 /*Ventana o monitor menor de 800px*/
 @media screen and (max-width: 800px) {

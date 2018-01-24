@@ -1,0 +1,20 @@
+nav{
+  color:black;
+  font-weight: bold;
+  box-shadow: 0 0 10px .1px;
+}
+nav img{
+  width: 60px;
+  height: 50px;
+}
+.jumbotron{
+  box-shadow: 0 0 10px .1px;
+}
+.jumbotron img{
+  width: 800px;
+  height: 300px;
+  padding-left: 200px;
+}
+.jumbotron p,h1{
+  text-align: center;
+}
