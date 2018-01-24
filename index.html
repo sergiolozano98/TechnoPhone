@@ -2,15 +2,32 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+    <script type="text/javascript">
+      function initMap() {
+
+          var location = new google.maps.LatLng(50.0875726, 14.4189987);
+
+          var mapCanvas = document.getElementById('map');
+          var mapOptions = {
+              center: location,
+              zoom: 16,
+              panControl: false,
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+          }
+          var map = new google.maps.Map(mapCanvas, mapOptions);
+
+      }
+      google.maps.event.addDomListener(window, 'load', initMap);
+    </script>
     <link rel="stylesheet" href="css/index.css">
     <title>Index</title>
   </head>
-  <body>
+  <body onload="initMap();">
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -77,19 +94,51 @@
         <td>
           <div id="article1">
             <img src="img/Article1.jpg" alt="" width="200px" height="300px">
-            <p>Te ofrecemos todo tipo de reparaciones de telofonia movil y tablets  Nuestro principal objetivo es una gran calidad de reparacion y sobre todo a un precio asequible.</p>
-        </div>
-      </td>
+            <p>Te ofrecemos todo tipo de reparaciones de telofonia movil y tablets  Nuestro principal objetivo es una gran calidad de reparacion y un precio asequible.</p>
+              <label for="show">
+  	             <span class="glyphicon glyphicon-plus" ></span>
+               </label>
+               <input type="radio" id="show" name="group">
+
+               <label for="hide">
+	                <span class="glyphicon glyphicon-minus"></span>
+              </label>
+              <input type="radio" id="hide" name="group">
+
+                <div id="content">Contenido a mostrar</div>
+        </td>
         <td>
           <div id="article2">
             <img src="img/Article2.jpg" alt="" width="200px" height="300px">
             <p>Tambien disponemos de un catalogo de telfonos movil para comprar e incluso alquilarlos por una temporada</p>
+            <label for="show">
+               <span class="glyphicon glyphicon-plus" ></span>
+             </label>
+             <input type="radio" id="show2" name="group">
+
+             <label for="hide">
+                <span  class="glyphicon glyphicon-minus"></span>
+            </label>
+            <input type="radio" id="hide2" name="group">
+
+              <div id="content">Contenido a mostrar</div>
         </div>
-      </td>
-        <td>
-          <div id="article3">
+       </td>
+       <td>
+        <div id="article3">
             <img src="img/Article3.jpg" alt="" width="200px" height="300px">
           <p>La seccion de accesorios es muy amplia, y sobre todo de gran calidad, disponemos desde fundas para todos los moviles hasta los ultimos Gadget</p>
+          <label for="show">
+             <span class="glyphicon glyphicon-plus" ></span>
+           </label>
+           <input type="radio" id="show3" name="group">
+
+           <label for="hide">
+              <span class="glyphicon glyphicon-minus"></span>
+          </label>
+          <input type="radio" id="hide3" name="group">
+
+            <div id="content">Contenido a mostrar</div>
         </div>
       </td>
       </tr>
@@ -114,10 +163,7 @@
                       <a href="#"><img src="img/ico/insta.png" alt=""></a>
                   </div>
               </div>
-              <!--API de google maps-->
-              <iframe id="map-container" frameborder="0" style="border:0"
-                  src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJOwg_06VPwokRYv534QaPC8g&key=AIzaSyBdJm9Amm4KALkKlZObWn40dcpRyH119zg" >
-              </iframe>
+              <div id="map"></div>
           </div>
           <div class="footer-copyright">
               <p>© 2016 Copyright Text </p>
