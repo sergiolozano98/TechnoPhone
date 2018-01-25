@@ -40,6 +40,18 @@ footer a:focus {
 }
 .social-networks img{
   width: 50px;
-  height: 50px;
+  height: 150px;
   float: right;
+  padding-top: 87px;
 }
+
+#map {
+  margin-top: 5px;
+  margin-right: 73px;
+  float:right;
+  height:90px;
+  width: 300px;
+ }
+ .col-sm-3{
+   float: left;
+ }

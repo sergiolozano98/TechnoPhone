@@ -1,0 +1,11 @@
+form{
+  height: 415px;
+  width: 445px;
+  padding: 8px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow:20px 20px 50px grey;
+  background-color: #2187a2;
+  margin-left: 400px;
+  border-radius: 4px;
+}
