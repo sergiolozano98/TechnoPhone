@@ -1,5 +1,5 @@
 form{
-  height: 415px;
+  height: 465px;
   width: 445px;
   padding: 8px;
   -webkit-box-shadow: 0 10px 6px -6px #777;
@@ -8,4 +8,10 @@ form{
   background-color: #2187a2;
   margin-left: 400px;
   border-radius: 4px;
+}
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    margin-left: 170px;
 }
