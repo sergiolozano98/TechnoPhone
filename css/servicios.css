@@ -1,3 +1,4 @@
+/*Css de las Cartas */
 .card1{
   padding-top: 10px;
   width: 300px;
@@ -7,10 +8,8 @@
   border-radius: 6px;
   margin: auto;
   box-shadow: 0 0 10px .1px;
-}
-td{
-  padding-left: 250px;
-  padding-top: 20px;
+  margin-left: 250px;
+  margin-top: 20px;
 }
 
 
